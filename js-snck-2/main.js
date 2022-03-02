@@ -1,11 +1,12 @@
-let userNumber = parseInt( prompt('Inserisci un numero'));
+const userNumber = parseInt(prompt('inserisci un numero'));
 
 for (i = 0; i < userNumber; i++) {
-    let tempArray = [];
-        while (tempArray.length < 10) {
-            tempArray.push(Math.floor(Math.random(4) * 4532));
-        };
+    const mainArrays =[];
+        while (mainArrays < 10) {
+            mainArrays.push(Math.floor(Math.random(4 * 4526) + 8));
+            i++
+        }
+
 };
 
-
-console.log(tempArray);
+console.log(mainArrays);
