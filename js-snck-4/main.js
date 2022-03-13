@@ -1,11 +1,28 @@
 
 
-function evenSum (num1, num2) {
-    if ((num1 + num2) % 2 === 0){
-        return true;
-    } else{
-        return false;
-    }    
-};
+const animal = [
+    {
+        nome : 'cane',
+        famiglia: 'canidi',
+        classe: 'mammiferi',
+    },
+    {
+        nome : 'leone',
+        famiglia: 'felidi',
+        classe: 'mammiferi',
+    },
+    {
+        nome : 'gallina',
+        famiglia: 'fasianidi',
+        classe: 'uccelli',
+    },
+    {
+        nome : 'ratto',
+        famiglia: 'roditori',
+        classe: 'sorci',
+    },
+]
 
-console.log(evenSum(2,3))
+const listaMammiferi = animal.filter((element) => { if (element.classe == 'mammiferi') return true;})
+
+console.log(listaMammiferi)
